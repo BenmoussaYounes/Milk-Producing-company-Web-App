@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    background-color: #9DC08B;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+.headpart {
+    padding-right: 2rem;
+    float: right;
+    display: flex;
+    padding-bottom: 1rem;
+    text-align: right;
+    gap: 2rem;
+  }
+  .headpart h1 {
+    text-align: right;
+  }
+  .headpart button{
+    align-self: center;
+  }
+  .Reg {
+    padding-top: 1rem;
+    margin-right: 1rem;
+  }
+  .col-md-4{
+    padding: 8rem;
+  }
+  
