@@ -1,4 +1,4 @@
-import Home from "../../presentation/pages/home";
+
 import TotalDailyMilkProduction from "../../presentation/pages/totalDailyMilkProduction";
 import BirthRegistration from "../../presentation/pages/birthRegistration";
 import Registering from "../../presentation/pages/registering";
@@ -7,7 +7,7 @@ export default function Route() {
     let Component;
     switch(window.location.pathname){
       case "/": 
-      Component = Home
+      Component = Registering
       break;
       case "/registering": 
       Component = Registering
@@ -21,7 +21,7 @@ export default function Route() {
       case "/totalDailyMilkProduction": 
       Component = TotalDailyMilkProduction
       break;
-      default :Component=Home
+      default :Component=Registering
       break
     }
     return <Component/>;

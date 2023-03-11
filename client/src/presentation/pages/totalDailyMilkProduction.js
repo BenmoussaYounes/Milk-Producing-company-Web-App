@@ -94,7 +94,7 @@ export default function TotalDailyMilkProduction(){
   
   function  submitEditeModal() {
       backend.put(`/totalyDailyMilk/${EditDate}`, {
-        "milkQuantity": newTDMPData.id,
+        "milkQuantity": newTDMPData.milkQuantity,
         "date": newTDMPData.date,
       })
       setShowEditModal(false);
@@ -208,7 +208,7 @@ export default function TotalDailyMilkProduction(){
                             <label >      كمية   الحليب    باللتر    </label>
                                 <input type="number" className="form-control" onChange={(e) => hundlSave(e)} id="milkQuantity" value={newTDMPData.milkQuantity} placeholder="" />
                                 <label> اليوم</label>
-                                <input type="text" className="form-control " onChange={(e) => hundlSave(e)} id="date" value={newTDMPData.date} placeholder="date" />
+                                <input type="date" className="form-control " onChange={(e) => hundlSave(e)} id="date" value={newTDMPData.date} placeholder="date" />
                             </form>
                         </div>
                     </form>
